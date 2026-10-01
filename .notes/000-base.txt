@@ -1,5 +1,5 @@
 +----------------------------------------+
-/speckit-constitution (once per project) |
+/speckit.constitution (once per project) |
 +----------------------------------------+
 This is python project targeting experiments with ML algorithms.
 Prefer to work with jupyter notebooks wherever possible
@@ -18,41 +18,41 @@ Do not write tests at all, human user will do that.
 
 
 +----------------------------------------+
-/speckit-specify                         |
+/speckit.specify                         |
 +----------------------------------------+
 
 
 +----------------------------------------+
-/speckit-clarify                         |
+/speckit.clarify                         |
 +----------------------------------------+
 
 
 +----------------------------------------+
-/speckit-plan                            |
+/speckit.plan                            |
 +----------------------------------------+
 
 
 +----------------------------------------+
-/speckit-checklist                       |
+/speckit.checklist                       |
 +----------------------------------------+
 
 
 +----------------------------------------+
-/speckit-tasks                           |
+/speckit.tasks                           |
 +----------------------------------------+
 
 
 +----------------------------------------+
-/speckit-analyze                         |
+/speckit.analyze                         |
 +----------------------------------------+
 
 
 +----------------------------------------+
-/speckit-implement                       |
+/speckit.implement                       |
 +----------------------------------------+
 
 
 +----------------------------------------+
-/speckit-converge                        |
+/speckit.converge                        |
 +----------------------------------------+
 
