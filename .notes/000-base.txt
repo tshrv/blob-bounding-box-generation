@@ -1,0 +1,58 @@
++----------------------------------------+
+/speckit-constitution (once per project) |
++----------------------------------------+
+This is python project targeting experiments with ML algorithms.
+Prefer to work with jupyter notebooks wherever possible
+Development environment is python 3.12, uv, linux(ubuntu).
+Write testable, maintainable, readable, extensible code.
+For any heavy dependency, prefer running it via docker via docker compose if possible instead of installing it directly.
+For all dependencies, ensure a specific version is pinned.
+Use loguru for logging.
+Log events in a way that they resemble complete trace of workflow.
+Use ruff to format all python code and sort imports.
+Without it, a feature cannot be considered as complete.
+
+Ignore folders entirely: ".notes", "src/playground"
+
+Do not write tests at all, human user will do that.
+
+
++----------------------------------------+
+/speckit-specify                         |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit-clarify                         |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit-plan                            |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit-checklist                       |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit-tasks                           |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit-analyze                         |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit-implement                       |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit-converge                        |
++----------------------------------------+
+
