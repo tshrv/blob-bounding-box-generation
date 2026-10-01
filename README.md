@@ -69,3 +69,9 @@ Code is formatted and linted via Ruff:
 uv run ruff check .
 uv run ruff format --check .
 ```
+
+## Run Tests
+Ensure that `data/example_mask.png` exists and run following command
+```sh
+uv run pytest
+```
