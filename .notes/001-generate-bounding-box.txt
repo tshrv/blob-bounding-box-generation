@@ -1,0 +1,91 @@
++----------------------------------------+
+/speckit.constitution                    |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit.specify                         |
++----------------------------------------+
+Calculate rotated rectangle bounding box for blobs.
+Given a binary semantic segmentation mask, as a `.png` file.
+This is a 2-dimensional array representing a binary mask.
+It contains multiple distinct, non-overlapping connected components (blobs).
+Identify individual object instances (blobs) and for each blob, identify specifically defined rotated rectangle coordinates for each instance.
+Calculate the rotated rectangle bounding box that will maximize the Intersection-over-Union of the blob and that mask defined by the rectangle itself.
+Rectangle to be rotated from its center, -90 degreed to +90 degrees
+Output results in a csv, with one record per blob, containing result data for all identified blobs.
+Configurable minimum area threshold, default 1 pixel, can help ignore noise
+Strictly enclosing bounded box, does not clip blob portions.
+
++----------------------------------------+
+/speckit.clarify                         |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit.plan                            |
++----------------------------------------+
+Sample image available at `data/example_mask.png`
+Output csv file name format "blob_bounding_boxes_{timestamp}.csv"
+Output csv file schema:
+```
+[
+  {
+    "column_name": "blob_id",
+    "description": "A unique identifier for the blob",
+    "example_value": 1
+  },
+  {
+    "column_name": "center_x",
+    "description": "X-coordinate of the box center",
+    "example_value": 123.5
+  },
+  {
+    "column_name": "center_y",
+    "description": "Y-coordinate of the box center",
+    "example_value": 456.0
+  },
+  {
+    "column_name": "width",
+    "description": "Width of the rotated bounding box",
+    "example_value": 50.2
+  },
+  {
+    "column_name": "height",
+    "description": "Height of the rotated bounding box",
+    "example_value": 30.1
+  },
+  {
+    "column_name": "angle",
+    "description": "Rotation angle of the box in degrees (e.g., -90 to 90)",
+    "example_value": 45.0
+  }
+]
+```
+
+
+
++----------------------------------------+
+/speckit.checklist                       |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit.tasks                           |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit.analyze                         |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit.implement                       |
++----------------------------------------+
+
+
++----------------------------------------+
+/speckit.converge                        |
++----------------------------------------+
+

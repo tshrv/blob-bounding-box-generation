@@ -1,7 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/blob_bounding_box"]
+
 [project]
 name = "blob-bounding-box-generation"
 version = "0.1.0"
-description = "Add your description here"
+description = "Rotated rectangle bounding box generation for semantic segmentation blobs"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "opencv-python-headless==4.11.0.86",
+    "numpy==2.2.3",
+    "loguru==0.7.3",
+    "matplotlib==3.10.1",
+    "ipykernel==6.29.5",
+]
+
+[dependency-groups]
+dev = [
+    "ruff==0.9.9",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = [".notes", "src/playground"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]

@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlobBoundingBoxesCSVRecord",
+  "description": "Schema for each record in the blob bounding boxes CSV file",
+  "type": "object",
+  "required": [
+    "blob_id",
+    "center_x",
+    "center_y",
+    "width",
+    "height",
+    "angle"
+  ],
+  "properties": {
+    "blob_id": {
+      "description": "A unique identifier for the blob",
+      "type": "integer",
+      "minimum": 1,
+      "examples": [1]
+    },
+    "center_x": {
+      "description": "X-coordinate of the box center",
+      "type": "number",
+      "examples": [123.5]
+    },
+    "center_y": {
+      "description": "Y-coordinate of the box center",
+      "type": "number",
+      "examples": [456.0]
+    },
+    "width": {
+      "description": "Width of the rotated bounding box",
+      "type": "number",
+      "minimum": 0.0,
+      "examples": [50.2]
+    },
+    "height": {
+      "description": "Height of the rotated bounding box",
+      "type": "number",
+      "minimum": 0.0,
+      "examples": [30.1]
+    },
+    "angle": {
+      "description": "Rotation angle of the box in degrees (e.g., -90 to 90)",
+      "type": "number",
+      "minimum": -90.0,
+      "maximum": 90.0,
+      "examples": [45.0]
+    }
+  },
+  "additionalProperties": false
+}
